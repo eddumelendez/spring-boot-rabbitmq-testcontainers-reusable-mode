@@ -21,7 +21,7 @@ public class ProducerApplicationTests {
 		@Bean
 		@ServiceConnection
 		@RestartScope
-		RabbitMQContainer kafkaContainer() {
+		RabbitMQContainer rabbitmqContainer() {
 			return new RabbitMQContainer("rabbitmq:3.11-alpine")
 					.withReuse(true);
 		}
